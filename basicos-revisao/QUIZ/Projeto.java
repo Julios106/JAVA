@@ -25,21 +25,21 @@ public  class Projeto {
 		};
 		
 		String [][] alternativas = {
-			{"function", "class", "create", "object"}, // correta: 2
-			{"console()", "print()", "write()", "printf()"}, // correta: 4
-			{"int", "double", "boolean", "string"}, // correta: 1
+			{"function", "class", "create", "object"}, 
+			{"console()", "print()", "write()", "printf()"}, 
+			{"int", "double", "boolean", "string"}, 
 			{"*", "#", "&", "@"}, // correta: 3
-			{"make", "new", "create", "object"}, // correta: 2
-			{"while", "if", "switch", "case"}, // correta: 1
-			{"Reader", "Input", "System", "Scanner"}, // correta: 4
-			{"stdlib.h", "string.h", "stdio.h", "math.h"}, // correta: 3
-			{"Encapsulamento", "Loop", "Casting", "Compilação"}, // correta: 1
-			{"static", "const", "fixed", "final"}, // correta: 4
-			{"1", "0", "-1", "10"}, // correta: 2
-			{"start()", "run()", "main()", "begin()"}, // correta: 3
-			{"Class", "Method", "Package", "Array"}, // correta: 4
-			{"extends", "super", "inherit", "parent"}, // correta: 1
-			{"=", "!=", "==", "++"} // correta: 3
+			{"make", "new", "create", "object"}, 
+			{"while", "if", "switch", "case"},
+			{"Reader", "Input", "System", "Scanner"}, 
+			{"stdlib.h", "string.h", "stdio.h", "math.h"}, 
+			{"Encapsulamento", "Loop", "Casting", "Compilação"},
+			{"static", "const", "fixed", "final"}, 
+			{"1", "0", "-1", "10"}, 
+			{"start()", "run()", "main()", "begin()"},
+			{"Class", "Method", "Package", "Array"},
+			{"extends", "super", "inherit", "parent"},
+			{"=", "!=", "==", "++"}
 		};
 
 		int [] alternativasCorretas = {
