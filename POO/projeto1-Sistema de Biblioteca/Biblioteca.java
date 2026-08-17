@@ -115,7 +115,9 @@ class Sistema{
 		for(int i = 0; i<livros.size() ; i++){
 			
 			if(livros.get(i).getTitulo().equals(titulo)){
-				livros.get(i).mostrarLivro();	
+				livros.get(i).mostrarLivro();
+				encontrado	= true;
+				break;
 			}
 			
 		}
