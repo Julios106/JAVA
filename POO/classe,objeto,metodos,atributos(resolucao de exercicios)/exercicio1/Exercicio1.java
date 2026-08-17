@@ -10,6 +10,11 @@ class Aluno{
 			System.out.println("Ola,meu nome e " + nome + " tenho " + idade 
 				+ " anos de idade e estou a frequentar o curso de "+ curso + ".");
 		}
+		void gravar(String nome, int idade , String curso){
+			this.nome = nome;
+			this.idade = idade;
+			this.curso = curso;	
+		}
 		
 }
 
@@ -31,10 +36,7 @@ public class Exercicio1 {
 		
 		Aluno aluno1 = new Aluno();
 		
-		aluno1.nome = nome;
-		aluno1.idade = idade;
-		aluno1.curso = curso;
-		
+		aluno1.gravar(nome,idade,curso);
 		aluno1.apresentar();
 		
 		Aluno aluno2 = new Aluno();
