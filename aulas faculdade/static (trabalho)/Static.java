@@ -20,9 +20,10 @@ class Cofre{
 			}
 		}
 		
+		IO.println(">>>Contribuentes mais generosos<<<");
 		for(int i = 0 ; i<numeroContribuicoes  ; i++){
 			
-			IO.println(">>>Contribuentes mais generosos<<<");
+			
 			
 			if(array[i].valorContribuido == valorMaximo){
 				

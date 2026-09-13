@@ -42,6 +42,10 @@ class Aluno extends Pessoa {
 		
 	}
 	
+	public void oldApresentar(){
+		super.apresentar();
+	}
+	
 	public void mostrar(){
 		
 		IO.println("Id:" + id);
@@ -62,10 +66,10 @@ public class Protected{
 		
 		Aluno p1 = new Aluno("julios",19,"mocambique",1,"Informatica");
 		//p1.idade = -21;
-		p1.apresentar();
-		IO.println(" ");
-		p1.apresentar();
-		p1.mostrar();
+		p1.oldApresentar();
+		//IO.println(" ");
+		//p1.apresentar();
+		//p1.mostrar();
 		
 	}
 	
