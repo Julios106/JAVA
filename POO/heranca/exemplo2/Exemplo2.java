@@ -31,7 +31,7 @@
 	}
 	
 	public void estudar(){
-		IO.println("Estudante de " + curso);
+		IO.println("Estudante atual de " + curso);
 	}
 	
 
