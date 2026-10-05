@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 class Config{
-	static int MAX_ALUNOS = 2;	
+	final static int MAX_ALUNOS = 3;	
 }
 
 

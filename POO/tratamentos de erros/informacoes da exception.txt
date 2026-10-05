@@ -1,0 +1,117 @@
+# Java — Informações de uma Exception
+
+Quando capturamos uma Exception:
+
+```java
+catch (Exception e) {
+    // ...
+}
+```
+
+podemos usar diferentes métodos para obter informações sobre o erro.
+
+## 1. getMessage()
+
+Mostra apenas a mensagem da Exception.
+
+```java
+e.getMessage();
+```
+
+Exemplo:
+
+```text
+/ by zero
+```
+
+---
+
+## 2. toString()
+
+Mostra o tipo da Exception + a mensagem.
+
+```java
+e.toString();
+```
+
+Exemplo:
+
+```text
+java.lang.ArithmeticException: / by zero
+```
+
+---
+
+## 3. getClass()
+
+Mostra a classe da Exception.
+
+```java
+e.getClass();
+```
+
+Exemplo:
+
+```text
+class java.lang.ArithmeticException
+```
+
+Para obter apenas o nome:
+
+```java
+e.getClass().getSimpleName();
+```
+
+Resultado:
+
+```text
+ArithmeticException
+```
+
+---
+
+## 4. printStackTrace()
+
+Mostra informações detalhadas sobre o erro, incluindo:
+
+* tipo da Exception
+* mensagem
+* localização onde ocorreu
+* sequência de chamadas que levou ao erro
+
+```java
+e.printStackTrace();
+```
+
+Exemplo:
+
+```text
+java.lang.ArithmeticException: / by zero
+    at exercicio.main(exercicio.java:20)
+```
+
+É especialmente útil para **debugging**.
+
+---
+
+## Resumo rápido
+
+```text
+getMessage()
+→ apenas a mensagem
+
+toString()
+→ tipo + mensagem
+
+getClass().getSimpleName()
+→ nome da Exception
+
+printStackTrace()
+→ detalhes completos + localização do erro
+```
+
+### Mais importantes para lembrar
+
+`getMessage()` → mensagem para consultar/exibir.
+
+`printStackTrace()` → informações detalhadas para descobrir onde e como o erro aconteceu.

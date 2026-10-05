@@ -1,0 +1,78 @@
+ArithmeticException → erro em operações matemáticas.
+ArrayIndexOutOfBoundsException → índice inválido num array.
+NullPointerException → tentar usar algo que está null.
+InputMismatchException → entrada incompatível com o tipo esperado.
+
+
+Hierarquia de Exceptions
+
+Em Java, as Exceptions estão organizadas numa hierarquia de classes.
+
+Object
+  ↓
+Throwable
+  ├── Error
+  └── Exception
+       ↓
+   RuntimeException
+       ├── ArithmeticException
+       ├── NullPointerException
+       ├── ArrayIndexOutOfBoundsException
+       └── ...
+Conceitos importantes
+Throwable → base dos erros/exceptions.
+Error → problemas graves da JVM.
+Exception → situações que podem ser tratadas pelo programa.
+RuntimeException → grupo de várias exceptions comuns.
+Pai e filho
+
+Uma classe pai é mais geral e pode representar as suas classes filhas.
+
+Por isso:
+
+catch (Exception e)
+
+pode capturar:
+
+ArithmeticException
+
+porque:
+
+ArithmeticException
+       ↓
+RuntimeException
+       ↓
+Exception
+
+Quanto mais acima → mais geral.
+Quanto mais abaixo → mais específico.
+
+Não é necessário decorar todas as Exceptions. É mais importante entender a hierarquia.
+
+
+
+JAVA — HIERARQUIA DE EXCEPTIONS
+
+Object
+│
+└── Throwable
+    │
+    ├── Error
+    │   ├── OutOfMemoryError
+    │   ├── StackOverflowError
+    │   └── ...
+    │
+    └── Exception
+        │
+        ├── RuntimeException
+        │   ├── ArithmeticException
+        │   ├── NullPointerException
+        │   ├── ArrayIndexOutOfBoundsException
+        │   ├── NumberFormatException
+        │   ├── ClassCastException
+        │   └── ...
+        │
+        └── Outras Exceptions
+            ├── IOException
+            ├── SQLException
+            └── ...
