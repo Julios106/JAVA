@@ -1,0 +1,43 @@
+Unchecked:
+	RuntimeException e subclasses
+	Não és obrigado a tratar/declarar.
+
+Checked:
+	Exceptions fora de RuntimeException
+	Tens de tratar (try/catch) ou declarar (throws).
+
+
+Object
+  │
+  └── Throwable
+       │
+       ├── Error
+       │    ├── OutOfMemoryError
+       │    ├── StackOverflowError
+       │    └── ...
+       │
+       └── Exception
+            │
+            ├── RuntimeException ─────── UNCHECKED
+            │    ├── ArithmeticException
+            │    ├── NullPointerException
+            │    ├── IllegalArgumentException
+            │    ├── ArrayIndexOutOfBoundsException
+            │    └── ...
+            │
+            └── Outras Exceptions ───── CHECKED
+                 ├── IOException
+                 │    └── FileNotFoundException
+                 ├── SQLException
+                 ├── ClassNotFoundException
+                 ├── InterruptedException
+                 └── ...
+
+
+
+
+
+Exception em si → Checked.
+
+Mas:
+	RuntimeException → Unchecked, apesar de ser filha de Exception.
