@@ -58,7 +58,7 @@ public class Quiz{
 		while(indice < perguntas.getPerguntas().size() && vidas > 0){
 			
 			Pergunta atual = perguntas.getPerguntas().get(indice);
-			mostrarPergunta(atual,vidas);	
+			mostrarPergunta(atual,vidas);
 			
 			IO.println("Escolha alternativa:");
 			int alternativa = input.nextInt();
